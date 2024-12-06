@@ -42,7 +42,7 @@ const HomePage = () => {
       {/* Right column with image */}
       <div className="flex justify-center pt-10 pb-2 order-first lg:order-last lg:pb-10">
         <Image
-          className="rounded-3xl animate-slow-up-down max-w-full h-auto"
+          className="rounded-3xl animate-slow-up-down max-w-full h-auto cursor-pointer hover:animation-paused"
           src="/images/eva-image.jpg"
           width={400}
           height={400}
