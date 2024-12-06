@@ -5,18 +5,14 @@ export const metadata = {
   description:
     "Here is Eva's personal website, showcasing her self-made projects along with a few stories about herself.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/icons/rocket.png",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <main className="flex min-h-screen items-center bg-slate-50">
-          {children}
-        </main>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
