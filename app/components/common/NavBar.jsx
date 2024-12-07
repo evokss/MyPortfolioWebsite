@@ -19,7 +19,7 @@ const Navbar = () => {
             <a href="/">
               <img
                 src="/icons/rocket.png"
-                className="size-7"
+                className="size-6 transition ease-in-out delay-125 hover:scale-125"
                 alt="Header Logo"
               />
             </a>
