@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,47 +17,47 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand Icon */}
           <div className="flex items-center">
-            <a href="/">
+            <Link href="/">
               <img
                 src="/icons/rocket.png"
                 className="size-6 transition ease-in-out delay-125 hover:scale-125"
                 alt="Header Logo"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-6">
-            <a
-              href="#home"
+            <Link
+              href="/"
               className="text-gray-800 hover:text-rose-600 transition duration-300"
             >
               Home
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              href="/development"
               className="text-gray-800 hover:text-rose-600 transition duration-300"
             >
               About
-            </a>
-            <a
-              href="#projects"
+            </Link>
+            <Link
+              href="/development"
               className="text-gray-800 hover:text-rose-600 transition duration-300"
             >
               Projects
-            </a>
-            <a
-              href="#cv"
+            </Link>
+            <Link
+              href="/development"
               className="text-gray-800 hover:text-rose-600 transition duration-300"
             >
               CV
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/development"
               className="text-gray-800 hover:text-rose-600 transition duration-300"
             >
               Contact Me
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,36 +75,36 @@ const Navbar = () => {
       {/* Mobile Links */}
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
-          <a
-            href="#home"
+          <Link
+            href="/"
             className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            href="/development"
             className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
           >
             About
-          </a>
-          <a
-            href="#projects"
+          </Link>
+          <Link
+            href="/development"
             className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
           >
             Projects
-          </a>
-          <a
-            href="#cv"
+          </Link>
+          <Link
+            href="/development"
             className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
           >
             CV
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/development"
             className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
       )}
     </nav>
