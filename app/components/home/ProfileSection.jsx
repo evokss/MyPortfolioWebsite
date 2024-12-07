@@ -29,7 +29,7 @@ const ProfileSection = () => {
               DOWNLOAD MY RESUME
               <TbClick className="mt-2 text-sm text-gray-600" />
             </a>
-            <p>or you can also:</p>
+            <p>and you can also:</p>
           </div>
           {/* Contact button */}
           <button
