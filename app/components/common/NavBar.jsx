@@ -3,13 +3,18 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  // Function to determine if the link is active
+  const isActive = (path) => pathname === path;
 
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
@@ -30,7 +35,13 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-6">
             <Link
               href="/"
-              className="text-gray-800 hover:text-rose-600 transition duration-300"
+              className={`
+                ${
+                  isActive("/")
+                    ? "text-rose-600"
+                    : "text-gray-800 hover:text-rose-600 transition duration-300"
+                }
+              `}
             >
               Home
             </Link>
@@ -77,7 +88,14 @@ const Navbar = () => {
         <div className="md:hidden bg-white border-t border-gray-200">
           <Link
             href="/"
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+            className={`
+              block px-4 py-2 
+              ${
+                isActive("/")
+                  ? "text-rose-600 bg-gray-100"
+                  : "text-gray-800 hover:bg-gray-100"
+              }
+            `}
           >
             Home
           </Link>
