@@ -7,19 +7,19 @@ export default function DevelopmentPage() {
     <div>
       <div>
         <Navbar />
-        <div className="flex items-center justify-center min-h-screen bg-slate-50 lg:-mt-10">
-          <div className="max-w-md p-6 bg-white rounded-lg shadow-lg text-center">
-            <div className="text-6xl text-yellow-400 mb-4">🚧</div>
-            <h1 className="text-2xl font-bold text-gray-800 mb-2">
+        <div className="flex items-center justify-center min-h-screen bg-slate-50 dark:bg-gray-900 lg:-mt-10">
+          <div className="max-w-md p-6 bg-white dark:bg-gray-900 rounded-lg dark:border-2 dark:border-amber-600 shadow-none text-center">
+            <div className="text-6xl mb-4">🚧</div>
+            <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
               Page Under Construction
             </h1>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 dark:text-white mb-6">
               "This page is still in the oven. Thank you for your patience! 🍪"
             </p>
             <div className="mb-2">
               <Link
                 href="/"
-                className="px-6 py-3 bg-rose-600 text-white rounded-lg shadow-md hover:bg-rose-500 transition"
+                className="px-6 py-3 bg-rose-600 text-white rounded-lg shadow-md hover:bg-rose-500 dark:hover:bg-rose-700 transition"
               >
                 Back to Home
               </Link>

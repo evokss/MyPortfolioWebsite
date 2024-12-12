@@ -4,7 +4,7 @@ import { TbClick } from "react-icons/tb";
 
 const ProfileSection = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 items-center mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center mx-auto px-4 sm:px-6 lg:px-8">
       {/* Left column: Text, link, and button */}
       <section className="flex flex-col justify-center pt-4 pb-10 px-12 lg:pt-10">
         {/* Main heading */}
@@ -13,7 +13,7 @@ const ProfileSection = () => {
           I'm Eva Koss
         </h1>
         {/* Subheading */}
-        <h2 className="text-2xl text-center mb-6 text-gray-900 lg:text-left md:text-2xl lg:text-3xl">
+        <h2 className="text-2xl text-center mb-6 text-gray-900 dark:text-white lg:text-left md:text-2xl lg:text-3xl">
           Frontend developer.
         </h2>
         {/* Links and button */}
@@ -24,18 +24,17 @@ const ProfileSection = () => {
               href="/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-md font-bold text-gray-900 hover:text-orange-400"
+              className="inline-flex items-center text-md font-bold text-gray-900 dark:text-white hover:text-orange-400"
             >
               DOWNLOAD MY RESUME
-              <TbClick className="mt-2 text-sm text-gray-600" />
+              <TbClick className="mt-2 text-sm text-gray-600 dark:text-slate-200" />
             </a>
-            <p>and you can also:</p>
           </div>
           {/* Contact button */}
           <button
             className="
               rounded-full text-sm sm:text-base 
-              text-white bg-rose-600 hover:bg-rose-400 
+              text-white bg-rose-600 hover:bg-rose-400 dark:hover:bg-rose-700
               px-4 py-2 transition-colors duration-300"
           >
             CONTACT ME
