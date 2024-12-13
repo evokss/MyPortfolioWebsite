@@ -105,6 +105,21 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
+            {theme === "light" ? (
+              <img
+                src="/icons/moon.png"
+                className="size-6 transition ease-in-out delay-125 hover:scale-125 mr-5 cursor-pointer"
+                onClick={() => themeSwitchHandler("dark")}
+                alt="Header Logo"
+              />
+            ) : (
+              <img
+                src="/icons/sun.png"
+                className="size-6 transition ease-in-out delay-125 hover:scale-125 mr-5 cursor-pointer"
+                onClick={() => themeSwitchHandler("light")}
+                alt="Header Logo"
+              />
+            )}
             <button
               onClick={toggleMenu}
               className="text-gray-800 dark:text-white focus:outline-none"
