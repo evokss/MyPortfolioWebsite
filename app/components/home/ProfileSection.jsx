@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { TbClick } from "react-icons/tb";
+import Link from "next/link";
 
 const ProfileSection = () => {
   return (
@@ -21,7 +22,7 @@ const ProfileSection = () => {
           {/* Resume download link */}
           <div className="text-center sm:text-left">
             <a
-              href="/"
+              href="/Resume_Frontend-Developer_Eva-Koss.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-md font-bold text-gray-900 dark:text-white hover:text-orange-400"
@@ -31,27 +32,31 @@ const ProfileSection = () => {
             </a>
           </div>
           {/* Contact button */}
-          <button
-            className="
-              rounded-full text-sm sm:text-base 
-              text-white bg-rose-600 hover:bg-rose-400 dark:hover:bg-rose-700
-              px-4 py-2 transition-colors duration-300"
-          >
-            CONTACT ME
-          </button>
+          <Link href="/contact" passHref>
+            <button
+              className="
+          rounded-full text-sm sm:text-base 
+          text-white bg-rose-600 hover:bg-rose-400 dark:hover:bg-rose-700
+          px-4 py-2 transition-colors duration-300"
+            >
+              CONTACT ME
+            </button>
+          </Link>
         </div>
       </section>
 
       {/* Right column: Image */}
       <div className="flex justify-center pt-10 pb-2 order-first lg:order-last lg:pb-10">
-        <Image
-          className="rounded-3xl animate-slow-up-down max-w-full h-auto cursor-pointer hover:animation-paused"
-          src="/images/eva-image.jpg"
-          width={400}
-          height={400}
-          quality={95}
-          alt="Eva Koss"
-        />
+        <Link href="/contact">
+          <Image
+            className="rounded-3xl animate-slow-up-down max-w-full h-auto cursor-pointer hover:animation-paused"
+            src="/images/eva-image.jpg"
+            width={400}
+            height={400}
+            quality={95}
+            alt="Eva Koss"
+          />
+        </Link>
       </div>
     </div>
   );
