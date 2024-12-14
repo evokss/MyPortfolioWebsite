@@ -96,8 +96,14 @@ const Navbar = () => {
               CV
             </Link>
             <Link
-              href="/development"
-              className="text-gray-800 dark:text-white hover:text-rose-600 transition duration-300"
+              href="/contact"
+              className={`
+                ${
+                  isActive("/contact")
+                    ? "text-rose-600"
+                    : "text-gray-800 dark:text-white hover:text-rose-600 transition duration-300"
+                }
+              `}
             >
               Contact Me
             </Link>
@@ -165,8 +171,15 @@ const Navbar = () => {
             CV
           </Link>
           <Link
-            href="/development"
-            className="block px-4 py-2 text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
+            href="/contact"
+            className={`
+              block px-4 py-2 
+              ${
+                isActive("/contact")
+                  ? "text-rose-600 bg-gray-100 dark:bg-gray-900"
+                  : "text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
+              }
+            `}
           >
             Contact Me
           </Link>
