@@ -80,11 +80,11 @@ const ContactPage = () => {
           {/* Contact Form Section */}
           <div className="w-full md:w-1/2 p-8 bg-gray-50 dark:bg-gray-900 dark:text-white">
             <h2 className="text-3xl font-bold text-gray-800 mb-4 dark:text-rose-600">
-              Let's create something amazing together
+              Let&apos;s create something amazing together
             </h2>
             <p className="text-gray-600 mb-6 dark:text-slate-50">
-              The perfect time to start is now. Let's collaborate and turn your
-              concepts into something exceptional—contact me today!
+              The perfect time to start is now. Let&apos;s collaborate and turn
+              your concepts into something exceptional—contact me today!
             </p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -165,7 +165,8 @@ const ContactPage = () => {
             <SocialLinks />
             <div className="mt-8 text-center">
               <p className="text-sm italic">
-                "Creativity is intelligence having fun." - Albert Einstein
+                &quot;Creativity is intelligence having fun.&quot; - Albert
+                Einstein
               </p>
             </div>
           </div>
