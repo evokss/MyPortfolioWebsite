@@ -14,7 +14,7 @@ export default function DevelopmentPage() {
               Page Under Construction
             </h1>
             <p className="text-gray-600 dark:text-white mb-6">
-              "This page is still in the oven. Thank you for your patience! 🍪"
+              This page is still in the oven. Thank you for your patience! 🍪
             </p>
             <div className="mb-2">
               <Link

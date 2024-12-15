@@ -11,7 +11,7 @@ const ProfileSection = () => {
         {/* Main heading */}
         <h1 className="text-3xl text-center font-bold mb-2 text-orange-400 md:text-4xl lg:text-5xl lg:text-left">
           <span className="block md:inline md:mr-2">Hi!</span>
-          I'm Eva Koss
+          I&apos;m Eva Koss
         </h1>
         {/* Subheading */}
         <h2 className="text-2xl text-center mb-6 text-gray-900 dark:text-white lg:text-left md:text-2xl lg:text-3xl">

@@ -23,7 +23,7 @@ const SuccessModal = ({ onClose }) => {
             Message Sent Successfully!
           </h3>
           <p className="text-gray-600 mb-6">
-            Thank you for reaching out! I'll get back to you as soon as
+            Thank you for reaching out! I&apos;ll get back to you as soon as
             possible.
           </p>
           <button
