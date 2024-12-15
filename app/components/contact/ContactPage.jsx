@@ -2,44 +2,9 @@
 
 import React, { useState } from "react";
 import Navbar from "../common/NavBar";
-
-const SuccessModal = ({ onClose }) => {
-  return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
-      <div className="bg-white rounded-lg shadow-xl p-8 max-w-sm w-full">
-        <div className="text-center">
-          <svg
-            className="mx-auto mb-4 w-16 h-16 text-green-600"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <h3 className="text-2xl font-bold mb-4 text-gray-800">
-            Message Sent Successfully!
-          </h3>
-          <p className="text-gray-600 mb-6">
-            Thank you for reaching out! I'll get back to you as soon as
-            possible.
-          </p>
-          <button
-            onClick={onClose}
-            className="w-full bg-rose-600 text-white py-2 px-4 rounded-md hover:bg-rose-500 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-rose-600"
-          >
-            Okay
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+import SuccessModal from "./SuccessModal";
+import SocialLinks from "./SocialLinks";
+import { submitForm } from "../../utils/formSubmission";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -71,38 +36,26 @@ const ContactPage = () => {
       error: null,
     });
 
-    try {
-      // Option 1: Formspree (quick setup)
-      const response = await fetch("https://formspree.io/f/mldekqgd", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formData),
+    const result = await submitForm(formData);
+
+    if (result.success) {
+      // Clear form after successful submission
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
       });
 
-      if (response.ok) {
-        // Clear form after successful submission
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-
-        setSubmissionStatus({
-          isLoading: false,
-          isSuccess: true,
-          error: null,
-        });
-      } else {
-        throw new Error("Submission failed");
-      }
-    } catch (error) {
+      setSubmissionStatus({
+        isLoading: false,
+        isSuccess: true,
+        error: null,
+      });
+    } else {
       setSubmissionStatus({
         isLoading: false,
         isSuccess: false,
-        error: "Failed to send message. Please try again.",
+        error: result.error,
       });
     }
   };
@@ -113,43 +66,6 @@ const ContactPage = () => {
       isSuccess: false,
     }));
   };
-
-  const socialLinks = [
-    {
-      icon: <img src="/icons/gmail.png" className="w-8 h-8" alt="Gmail icon" />,
-      name: "Gmail",
-      link: "mailto:ekoss.prog@gmail.com",
-    },
-    {
-      icon: (
-        <img
-          src="/icons/telegram.png"
-          className="w-8 h-8"
-          alt="Telegram icon"
-        />
-      ),
-      name: "Telegram",
-      link: "https://t.me/evokss",
-    },
-    {
-      icon: (
-        <img
-          src="/icons/linkedin.png"
-          className="w-8 h-8"
-          alt="LinkedIn icon"
-        />
-      ),
-      name: "LinkedIn",
-      link: "https://www.linkedin.com/in/evakoss/",
-    },
-    {
-      icon: (
-        <img src="/icons/github.png" className="w-8 h-8" alt="GitHub icon" />
-      ),
-      name: "GitHub",
-      link: "https://github.com/evokss",
-    },
-  ];
 
   return (
     <>
@@ -164,10 +80,10 @@ const ContactPage = () => {
           {/* Contact Form Section */}
           <div className="w-full md:w-1/2 p-8 bg-gray-50 dark:bg-gray-900 dark:text-white">
             <h2 className="text-3xl font-bold text-gray-800 mb-4 dark:text-rose-600">
-              Let’s create something amazing together
+              Let's create something amazing together
             </h2>
             <p className="text-gray-600 mb-6 dark:text-slate-50">
-              The perfect time to start is now. Let’s collaborate and turn your
+              The perfect time to start is now. Let's collaborate and turn your
               concepts into something exceptional—contact me today!
             </p>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -238,11 +154,6 @@ const ContactPage = () => {
               >
                 {submissionStatus.isLoading ? "Sending..." : "Send Message"}
               </button>
-              {/* {submissionStatus.isSuccess && (
-                <div className="text-green-600 text-sm mt-4">
-                  Your message was sent successfully! I'll get back to you soon.
-                </div>
-              )} */}
             </form>
           </div>
 
@@ -251,20 +162,7 @@ const ContactPage = () => {
             <h3 className="text-2xl font-bold mb-6 text-center">
               Connect With Me
             </h3>
-            <div className="grid grid-cols-2 gap-6">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center justify-center hover:scale-110 transition duration-300 ease-in-out"
-                >
-                  {social.icon}
-                  <span className="mt-2 text-sm">{social.name}</span>
-                </a>
-              ))}
-            </div>
+            <SocialLinks />
             <div className="mt-8 text-center">
               <p className="text-sm italic">
                 "Creativity is intelligence having fun." - Albert Einstein
