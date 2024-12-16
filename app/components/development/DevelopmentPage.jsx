@@ -8,13 +8,14 @@ export default function DevelopmentPage() {
       <div>
         <Navbar />
         <div className="flex items-center justify-center min-h-screen bg-slate-50 dark:bg-gray-900 lg:-mt-10">
-          <div className="max-w-md p-6 bg-white dark:bg-gray-900 rounded-lg dark:border-2 dark:border-amber-600 shadow-none text-center">
+          <div className="max-w-md p-6 bg-white m-5 dark:bg-gray-900 rounded-lg dark:border-2 dark:border-amber-600 shadow-none text-center">
             <div className="text-6xl mb-4">🚧</div>
             <h1 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
               Page Under Construction
             </h1>
             <p className="text-gray-600 dark:text-white mb-6">
-              This page is still in the oven. Thank you for your patience! 🍪
+              This page is still in the oven. <br />
+              Thank you for your patience! 🍪
             </p>
             <div className="mb-2">
               <Link
