@@ -50,7 +50,7 @@ const ProfileSection = () => {
         <Link href="/contact">
           <Image
             className="rounded-3xl animate-slow-up-down max-w-full h-auto cursor-pointer hover:animation-paused hover:shadow-[0_1px_25px_#FB923C]"
-            src="/images/eva-photo.jpg"
+            src="/images/eva-image.jpg"
             width={400}
             height={400}
             quality={95}
