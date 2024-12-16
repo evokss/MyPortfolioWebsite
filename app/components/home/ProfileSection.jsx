@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ProfileSection = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-14 gap-4 items-center mx-auto px-4 sm:px-6 lg:px-8">
       {/* Left column: Text, link, and button */}
       <section className="flex flex-col justify-center pt-4 pb-10 px-12 lg:pt-10">
         {/* Main heading */}
@@ -49,8 +49,8 @@ const ProfileSection = () => {
       <div className="flex justify-center pt-10 pb-2 order-first lg:order-last lg:pb-10">
         <Link href="/contact">
           <Image
-            className="rounded-3xl animate-slow-up-down max-w-full h-auto cursor-pointer hover:animation-paused"
-            src="/images/eva-image.jpg"
+            className="rounded-3xl animate-slow-up-down max-w-full h-auto cursor-pointer hover:animation-paused hover:shadow-[0_1px_25px_#FB923C]"
+            src="/images/eva-photo.jpg"
             width={400}
             height={400}
             quality={95}
