@@ -6,21 +6,43 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const initialTheme = localStorage.getItem("theme") || "dark";
-  const [theme, setTheme] = useState(initialTheme);
+  // State to track if the component has mounted
+  const [isMounted, setIsMounted] = useState(false);
+
+  // State to manage the theme, set the default theme
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    // Mark as mounted to enable client-side-only logic
+    setIsMounted(true);
+
+    // Access localStorage safely on the client side
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("theme") || "dark";
+      setTheme(savedTheme);
+      if (savedTheme === "dark") {
+        document.body.classList.add("dark");
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    // Apply the theme change
+    if (isMounted) {
+      theme === "dark"
+        ? document.body.classList.add("dark")
+        : document.body.classList.remove("dark");
+    }
+  }, [theme, isMounted]);
 
   const themeSwitchHandler = (newTheme) => {
     if (newTheme === "light" || newTheme === "dark") {
       setTheme(newTheme);
-      localStorage.setItem("theme", newTheme);
+      if (typeof window !== "undefined") {
+        localStorage.setItem("theme", newTheme);
+      }
     }
   };
-
-  useEffect(() => {
-    theme === "dark"
-      ? document.body.classList.add("dark")
-      : document.body.classList.remove("dark");
-  }, [theme]);
 
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
