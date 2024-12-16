@@ -165,8 +165,9 @@ const ContactPage = () => {
             <SocialLinks />
             <div className="mt-8 text-center">
               <p className="text-sm italic">
-                &quot;Creativity is intelligence having fun.&quot; - Albert
-                Einstein
+                &quot;Any fool can write code that a computer can understand.
+                Good programmers write code that humans can understand.&quot; -
+                Martin Fowler
               </p>
             </div>
           </div>
