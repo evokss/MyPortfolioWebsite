@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       animation: {
         "slow-up-down": "updown 8s ease-in-out infinite", // Smooth up-and-down motion
+        twinkle: "twinkle 3s infinite",
       },
       keyframes: {
         updown: {
@@ -19,6 +20,10 @@ module.exports = {
           "50%": {
             transform: "translateY(10px)", // Moves down by 20px
           },
+        },
+        twinkle: {
+          "0%, 100%": { opacity: "0.7" },
+          "50%": { opacity: "0.2" },
         },
       },
     },
