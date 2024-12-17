@@ -149,7 +149,7 @@ const ContactPage = () => {
                 className={`w-full text-white py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-600 transition-colors duration-300 ${
                   submissionStatus.isLoading
                     ? "bg-rose-400 cursor-not-allowed"
-                    : "bg-rose-600 hover:bg-rose-400"
+                    : "bg-rose-600 hover:bg-rose-400 dark:hover:bg-rose-700"
                 }`}
               >
                 {submissionStatus.isLoading ? "Sending..." : "Send Message"}
@@ -165,9 +165,8 @@ const ContactPage = () => {
             <SocialLinks />
             <div className="mt-8 text-center">
               <p className="text-sm italic">
-                &quot;Any fool can write code that a computer can understand.
-                Good programmers write code that humans can understand.&quot; -
-                Martin Fowler
+                &quot;The only way to do great work is to love what you
+                do.&quot; <br />- Steve Jobs
               </p>
             </div>
           </div>
