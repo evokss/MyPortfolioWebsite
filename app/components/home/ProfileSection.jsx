@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ProfileSection = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-14 gap-4 items-center mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-14 gap-0 items-center mx-auto px-4 sm:px-6 lg:px-8">
       {/* Left column: Text, link, and button */}
       <section className="flex flex-col justify-center pt-4 pb-10 px-12 lg:pt-10">
         {/* Main heading */}
@@ -35,9 +35,9 @@ const ProfileSection = () => {
           <Link href="/contact" passHref>
             <button
               className="
-          rounded-full text-sm sm:text-base 
-          text-white bg-rose-600 hover:bg-rose-400 dark:hover:bg-rose-700
-          px-4 py-2 transition-colors duration-300"
+                rounded-full text-sm sm:text-base 
+                text-white bg-rose-600 hover:bg-rose-400 dark:hover:bg-rose-700
+                px-4 py-2 transition-colors duration-300"
             >
               CONTACT ME
             </button>
@@ -49,7 +49,7 @@ const ProfileSection = () => {
       <div className="flex justify-center pt-10 pb-2 order-first lg:order-last lg:pb-10">
         <Link href="/contact">
           <Image
-            className="rounded-3xl animate-slow-up-down max-w-full h-auto cursor-pointer hover:animation-paused hover:shadow-[0_1px_25px_#FB923C]"
+            className="rounded-3xl animate-slow-up-down max-w-full h-auto cursor-pointer hover:animation-paused hover:shadow-[0_1px_25px_#EA580C] dark:hover:shadow-[0_1px_25px_#E10048]"
             src="/images/eva-image.jpg"
             width={400}
             height={400}
