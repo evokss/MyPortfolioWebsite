@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "../common/NavBar";
 import SuccessModal from "./SuccessModal";
 import SocialLinks from "./SocialLinks";
 import { submitForm } from "../../utils/formSubmission";
@@ -74,7 +73,6 @@ const ContactPage = () => {
         <SuccessModal onClose={closeSuccessModal} />
       )}
 
-      <Navbar />
       <div className="min-h-screen bg-slate-50 flex items-center justify-center p-6 dark:bg-gray-900 dark:text-white">
         <div className="max-w-4xl w-full bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col md:flex-row dark:shadow-none dark:border-2 dark:border-orange-400">
           {/* Contact Form Section */}
