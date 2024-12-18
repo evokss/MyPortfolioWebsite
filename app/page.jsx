@@ -4,11 +4,15 @@ import React from "react";
 import Navbar from "./components/common/NavBar";
 import HomePage from "./components/home/HomePage";
 
+import { StarryBackground } from "./utils/starryBackground";
+
 const page = () => {
   return (
     <>
       <Navbar />
-      <HomePage />
+      <StarryBackground>
+        <HomePage />
+      </StarryBackground>
     </>
   );
 };
