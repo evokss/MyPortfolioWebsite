@@ -54,7 +54,7 @@ export const StarryBackground = ({ children, starCount = 100 }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex min-h-screen items-center">
+      <div className="relative z-10 flex min-h-screen items-center justify-center">
         {children}
       </div>
     </div>
