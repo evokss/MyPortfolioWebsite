@@ -87,14 +87,14 @@ const ProjectsShowcase = () => {
 
         {/* GitHub Footer */}
         <div className="text-center mt-16">
-          <div className="inline-flex items-center text-gray-600 dark:text-gray-400">
-            <span>
-              Dive deeper into my coding journey - explore more projects on
+          <div className="inline-flex flex-col sm:flex-row items-center text-gray-600 dark:text-gray-400">
+            <span className="text-center sm:text-left">
+              Dive deeper into my coding journey - explore more projects on:
             </span>
             <Link
               href="https://github.com/evokss"
               target="_blank"
-              className="inline-flex items-center text-orange-400 hover:text-orange-500 dark:text-rose-500 dark:hover:text-rose-400 font-medium transition-colors ml-2"
+              className="inline-flex items-center text-orange-400 hover:text-orange-500 dark:text-rose-500 dark:hover:text-rose-400 font-medium transition-colors mt-2 sm:mt-0 sm:ml-2"
             >
               <FiGithub className="w-5 h-5 mr-1" />
               <span>GitHub</span>
