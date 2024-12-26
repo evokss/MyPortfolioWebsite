@@ -86,7 +86,7 @@ const ProjectsShowcase = () => {
         </div>
 
         {/* GitHub Footer */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-16 px-7 md:p-0">
           <div className="inline-flex flex-col sm:flex-row items-center text-gray-600 dark:text-gray-400">
             <span className="text-center sm:text-left">
               Dive deeper into my coding journey - explore more projects on:
