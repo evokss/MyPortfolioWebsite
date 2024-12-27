@@ -48,8 +48,8 @@ const AboutPage = () => {
                   •
                 </span>
                 <p className="mb-4">
-                  Throughout my academic journey and early career, I've been
-                  actively working on various projects and with exceptional
+                  Throughout my academic journey and early career, I&apos;ve
+                  been actively working on various projects and with exceptional
                   teams, even managed to serve as a Microsoft Student Partner
                   and participate in and win several hackathons
                 </p>
@@ -59,7 +59,7 @@ const AboutPage = () => {
                   •
                 </span>
                 <p className="mb-4">
-                  In my free time, I've been consistently engaging in
+                  In my free time, I&apos;ve been consistently engaging in
                   open-source and freelance web development projects, further
                   fueling my love for crafting exceptional web experiences and
                   expanding my practical knowledge.
@@ -261,7 +261,7 @@ const AboutPage = () => {
               <PiBookOpen className="w-5 h-5 mt-1" />
               <div>
                 <h3 className="font-semibold">
-                  Bachelor's degree - Computer Science
+                  Bachelor&apos;s degree - Computer Science
                 </h3>
                 <p className="text-gray-400">D. Mendeleev State University</p>
                 <p className="text-sm text-gray-400">Sep 2017 - Jul 2021</p>
