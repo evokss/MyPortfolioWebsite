@@ -102,8 +102,14 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/development"
-              className="text-gray-800 dark:text-white hover:text-rose-600 transition duration-300"
+              href="/about"
+              className={`
+                ${
+                  isActive("/about")
+                    ? "text-rose-600"
+                    : "text-gray-800 dark:text-white hover:text-rose-600 transition duration-300"
+                }
+              `}
             >
               About
             </Link>
@@ -118,12 +124,6 @@ const Navbar = () => {
           `}
             >
               Projects
-            </Link>
-            <Link
-              href="/development"
-              className="text-gray-800 dark:text-white hover:text-rose-600 transition duration-300"
-            >
-              CV
             </Link>
             <Link
               href="/contact"
@@ -187,8 +187,15 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="/development"
-            className="text-2xl font-semibold text-gray-800 dark:text-white hover:text-rose-600"
+            href="/about"
+            className={`
+              text-2xl font-semibold
+              ${
+                isActive("/projects")
+                  ? "text-rose-600"
+                  : "text-gray-800 dark:text-white hover:text-rose-600"
+              }
+            `}
           >
             About
           </Link>
@@ -204,12 +211,6 @@ const Navbar = () => {
         `}
           >
             Projects
-          </Link>
-          <Link
-            href="/development"
-            className="text-2xl font-semibold text-gray-800 dark:text-white hover:text-rose-600"
-          >
-            CV
           </Link>
           <Link
             href="/contact"
