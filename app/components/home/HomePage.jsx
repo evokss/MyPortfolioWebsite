@@ -22,10 +22,10 @@ const HomePage = () => {
           {/* Resume download link */}
           <div className="text-center sm:text-left">
             <a
-              href="/Resume_Frontend-Developer_Eva-Koss.pdf"
+              href="/Resume_Frontend-React-Developer_Eva-Koss.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-md font-bold text-gray-900 dark:text-white hover:text-orange-400"
+              className="inline-flex items-center text-md text-orange-500 font-bold hover:text-rose-600 dark:text-orange-400"
             >
               DOWNLOAD MY RESUME
               <TbClick className="mt-2 text-sm text-gray-600 dark:text-slate-200" />
