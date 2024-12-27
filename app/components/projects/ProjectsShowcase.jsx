@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
         {project.technologies.map((tech, index) => (
           <span
             key={index}
-            className="bg-blue-100 text-orange-400 text-xs font-medium px-2.5 py-0.5 rounded dark:text-rose-600"
+            className="bg-gray-100 text-orange-400 text-xs font-medium px-2.5 py-0.5 rounded dark:text-rose-600 dark:bg-blue-100"
           >
             {tech}
           </span>
@@ -60,11 +60,11 @@ const ProjectCard = ({ project }) => {
 // Main Projects Showcase Page
 const ProjectsShowcase = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 dark:bg-gray-900 dark:text-white">
+    <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 dark:bg-transparent dark:text-white">
       <div className="max-w-7xl mx-auto">
         {/* Welcome Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold sm:text-5xl md:text-6xl text-orange-400 mb-6">
+        <div className="text-center mb-16">
+          <h1 className="text-3xl font-extrabold sm:text-5xl md:text-6xl text-orange-400 mb-6">
             Welcome to My Project Gallery
           </h1>
 
