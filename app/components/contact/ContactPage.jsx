@@ -99,7 +99,7 @@ const ContactPage = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-rose-600 dark:text-gray-800"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 dark:focus:ring-rose-600 dark:text-gray-800"
                 />
               </div>
               <div>
@@ -116,7 +116,7 @@ const ContactPage = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-rose-600 dark:text-gray-800"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 dark:focus:ring-rose-600 dark:text-gray-800"
                 />
               </div>
               <div>
@@ -133,7 +133,7 @@ const ContactPage = () => {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-rose-600 dark:text-gray-800"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-400 dark:focus:ring-rose-600 dark:text-gray-800"
                 ></textarea>
               </div>
               {submissionStatus.error && (
