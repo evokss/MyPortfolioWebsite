@@ -191,7 +191,7 @@ const Navbar = () => {
             className={`
               text-2xl font-semibold
               ${
-                isActive("/projects")
+                isActive("/about")
                   ? "text-rose-600"
                   : "text-gray-800 dark:text-white hover:text-rose-600"
               }
