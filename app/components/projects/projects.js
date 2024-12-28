@@ -31,11 +31,11 @@ export const projects = [
   },
   {
     id: 4,
-    name: "YouTube Clone",
+    name: "RetroTube",
     description:
       "The project replicates the core design of YouTube's interface, featuring a structured video grid, navigation bar, and user-friendly design elements, all built without the use of JavaScript.",
     technologies: ["Bootstrap", "HTML", "CSS"],
-    githubLink: "https://github.com/evokss/MyRockPaperScissors",
+    githubLink: "https://github.com/evokss/MyYouTubeClone.github.io",
     deployLink: "https://evokss.github.io/MyYouTubeClone.github.io/",
     imageUrl: "/icons/youtube.png",
   },
