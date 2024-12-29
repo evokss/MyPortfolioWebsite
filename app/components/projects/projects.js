@@ -6,7 +6,7 @@ export const projects = [
       "A dynamic video grid application, featuring a responsive layout, interactive components, and seamless integration of favorite channels and video details for an engaging user experience.",
     technologies: ["React", "Tailwind", "Next.js"],
     githubLink: "https://github.com/evokss/MyFavVideos",
-    deployLink: "",
+    deployLink: "https://my-fav-videos.vercel.app/",
     imageUrl: "/icons/movie.png",
   },
   {
