@@ -26,7 +26,7 @@ export const projects = [
       "The game dynamically updates the interface with real-time results, tracks player scores persistently using localStorage, and employs logic to simulate computer moves and outcomes.",
     technologies: ["JavaScript", "HTML", "CSS"],
     githubLink: "https://github.com/evokss/MyRockPaperScissors",
-    deployLink: "",
+    deployLink: "https://evokss.github.io/MyRockPaperScissors.github.io/",
     imageUrl: "/icons/rock-paper-scissors.png",
   },
   {
