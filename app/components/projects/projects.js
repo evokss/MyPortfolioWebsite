@@ -47,7 +47,7 @@ export const projects = [
     technologies: ["React", "HTML", "CSS", "JavaScript"],
     githubLink:
       "https://github.com/evokss/ReactProjects/tree/main/airbnb-clone",
-    deployLink: "",
+    deployLink: "https://my-air-clone.vercel.app/",
     imageUrl: "/icons/airbnb.png",
   },
   {
