@@ -41,9 +41,9 @@ export const projects = [
   },
   {
     id: 5,
-    name: "Airbnb Clone",
+    name: "Airbnb Experiences Mobile Clone",
     description:
-      "This project display online experiences with badges for availability and location. It leverages props, mapping techniques, and conditional rendering to create a reusable and scalable codebase.",
+      "A mobile-first app showcasing online experiences with badges for availability and location. It employs reusable components, mapping techniques, and conditional rendering for scalable, responsive design.",
     technologies: ["React", "HTML", "CSS", "JavaScript"],
     githubLink:
       "https://github.com/evokss/ReactProjects/tree/main/airbnb-clone",
@@ -52,9 +52,9 @@ export const projects = [
   },
   {
     id: 6,
-    name: "React Fun Facts",
+    name: "React Fun Facts Mobile App",
     description:
-      "The game dynamically updates the interface with real-time results, tracks player scores persistently using localStorage, and employs logic to simulate computer moves and outcomes.",
+      "A mobile-first application presenting essential React facts in a responsive and user-friendly interface. It features a structured design with a reusable Navbar and Main components.",
     technologies: ["React", "JavaScript", "HTML", "CSS"],
     githubLink:
       "https://github.com/evokss/ReactProjects/tree/main/react-info-page",
