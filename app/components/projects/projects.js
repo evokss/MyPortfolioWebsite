@@ -16,7 +16,7 @@ export const projects = [
       "Generates random meme images from a preloaded dataset, and view the resulting meme on the screen. The app dynamically updates the displayed meme with each click, providing an interactive experience.",
     technologies: ["React", "JavaScript", "HTML", "CSS", "Node.js"],
     githubLink: "https://github.com/evokss/MemeFactory",
-    deployLink: "",
+    deployLink: "https://memes-factory.vercel.app/",
     imageUrl: "/icons/troll-face.png",
   },
   {
