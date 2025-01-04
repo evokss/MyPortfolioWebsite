@@ -77,7 +77,7 @@ const ContactPage = () => {
         <div className="max-w-4xl w-full bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col md:flex-row dark:shadow-none dark:border-2 dark:border-orange-400">
           {/* Contact Form Section */}
           <div className="w-full md:w-1/2 p-8 bg-gray-50 dark:bg-gray-900 dark:text-white">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4 dark:text-rose-600">
+            <h2 className="text-3xl font-bold text-orange-400 mb-4 dark:text-rose-600">
               Let&apos;s create something amazing together
             </h2>
             <p className="text-gray-600 mb-6 dark:text-slate-50">
