@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/common/NavBar";
-import ProjectsShowcase from "../components/projects/ProjectsShowcase";
+import Navbar from "../../components/common/NavBar";
+import ProjectsShowcase from "../../components/projects/ProjectsShowcase";
 import { StarryBackground } from "../utils/starryBackground";
 
 const page = () => {

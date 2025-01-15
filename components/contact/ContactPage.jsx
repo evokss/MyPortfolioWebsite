@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import SuccessModal from "./SuccessModal";
 import SocialLinks from "./SocialLinks";
-import { submitForm } from "../../utils/formSubmission";
+import { submitForm } from "../../app/utils/formSubmission";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
