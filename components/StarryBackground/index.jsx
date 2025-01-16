@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { generateStars } from "./utils";
 
-export const StarryBackground = ({ children, starCount = 100 }) => {
+export default function StarryBackground({ children, starCount = 100 }) {
   // Use useMemo to ensure consistent star generation
   const stars = useMemo(() => generateStars(starCount), [starCount]);
 
@@ -30,4 +30,4 @@ export const StarryBackground = ({ children, starCount = 100 }) => {
       </div>
     </div>
   );
-};
+}
