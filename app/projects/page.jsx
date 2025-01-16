@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/common/NavBar";
 import ProjectsShowcase from "../../components/projects/ProjectsShowcase";
-import StarryBackground from "@/components/starryBackground";
+import StarryBackground from "@/components/background/StarryBackground";
 
 const page = () => {
   return (
