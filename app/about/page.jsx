@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/common/NavBar";
 import AboutPage from "../../components/about/AboutPage";
-import { StarryBackground } from "../../components/StarryBackground";
+import { StarryBackground } from "@/components/starryBackground";
 
 const page = () => {
   return (
