@@ -157,6 +157,9 @@ const AboutPage = () => {
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Tailwind CSS
               </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Git&GitHub
+              </span>
             </div>
           </div>
 
@@ -184,6 +187,172 @@ const AboutPage = () => {
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Node.js
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Figma
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Git&GitHub
+              </span>
+            </div>
+          </div>
+
+          {/* Previous Role */}
+          <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-orange-400">
+                Jr. JavaScript Developer
+              </h3>
+              <p className="dark:text-gray-500">
+                Open Source Projects & Freelance • Jul 2024 - Feb 2024
+              </p>
+            </div>
+            <p className="mb-4">
+              Developed responsive and interactive web components and pages
+              using pure HTML, CSS, and modern JavaScript (ES6+), leveraging
+              advanced layout techniques like CSS Grid, Flexbox, and frameworks
+              such as Bootstrap and Tailwind CSS. Designed engaging animations
+              and transitions to enhance user experience. Delivered over 170+
+              website components inspired by major tech platforms, contributing
+              to fully functional projects.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                JavaScript
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Bootstrap
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Tailwind CSS
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                HTML
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                CSS
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Git&GitHub
+              </span>
+            </div>
+          </div>
+
+          {/* Previous Role */}
+          <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-orange-400">
+                Frontend Web Developer Intern
+              </h3>
+              <p className="dark:text-gray-500">
+                Itransition Group • Mar 2023 - Jun 2023
+              </p>
+            </div>
+            <p className="mb-4">
+              Created clean, semantic, and accessible HTML markup and styled web
+              pages following best practices and web standards. Implemented
+              responsive designs using CSS frameworks like Bootstrap and
+              enhanced functionality with modern JavaScript (ES6+). Utilized
+              Node.js for server-side development and integrated MongoDB for
+              efficient data storage and retrieval. Actively managed version
+              control and collaborative coding through Git and GitHub.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                HTML
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                CSS
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                JavaScript
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Bootstrap
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Node.js
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Git&GitHub
+              </span>
+            </div>
+          </div>
+
+          {/* Previous Role */}
+          <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-orange-400">
+                HTML/CSS Developer
+              </h3>
+              <p className="dark:text-gray-500">
+                Scientific-Production Center MAX CJSC • Feb 2020 - Mar 2021
+              </p>
+            </div>
+            <p className="mb-4">
+              Crafted responsive web experiences using advanced HTML and CSS
+              techniques, ensuring clean, semantic markup aligned with web
+              standards and best practices. Engineered high-performance websites
+              by optimizing HTML/CSS structure. Utilized Git and GitHub for
+              efficient version control and collaborative development,
+              contributing to seamless and scalable web solutions.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                HTML
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                CSS
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                JavaScript
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Git&GitHub
+              </span>
+            </div>
+          </div>
+
+          {/* Previous Role */}
+          <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-orange-400">
+                Microsoft Student Partner
+              </h3>
+              <p className="dark:text-gray-500">
+                Microsoft • Apr 2019 - Dec 2019
+              </p>
+            </div>
+            <p className="mb-4">
+              Acquired proficiency in emerging technologies and programming
+              languages through extensive self-learning, including
+              documentation, tutorials, and online forums. Organized and led
+              technical workshops and events on Microsoft technologies for
+              peers. Achieved notable success by leading a team to victory in
+              two hackathons, demonstrating rapid prototyping skills and
+              innovative problem-solving.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                JavaScript
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                HTML
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                CSS
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                C#
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                C++
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Python
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Team Leadership
               </span>
             </div>
           </div>
