@@ -167,7 +167,7 @@ const AboutPage = () => {
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
             <div className="mb-4">
               <h3 className="text-xl font-semibold text-orange-400">
-                React Developer
+                React Developer Intern
               </h3>
               <p className="dark:text-gray-500">
                 Y_LAB · Internship • Aug 2024 - Oct 2024
