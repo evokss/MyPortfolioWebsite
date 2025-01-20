@@ -427,13 +427,30 @@ const AboutPage = () => {
         <div className="space-y-6">
           <div className="bg-white/5 p-6 rounded-lg text-gray-800 bg-white border-2 border-orange-300 dark:border-rose-600 dark:text-orange-400">
             <div className="flex items-start gap-3">
-              <PiBookOpen className="w-5 h-5 mt-1" />
+              <PiGraduationCapLight className="w-5 h-5 mt-1" />
               <div>
                 <h3 className="font-semibold">
                   Bachelor&apos;s degree - Computer Science
                 </h3>
                 <p className="text-gray-400">D. Mendeleev State University</p>
                 <p className="text-sm text-gray-400">Sep 2017 - Jul 2021</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white/5 p-6 rounded-lg text-gray-800 bg-white border-2 border-orange-300 dark:border-rose-600 dark:text-orange-400">
+            <div className="flex items-start gap-3">
+              <PiBookOpen className="w-5 h-5 mt-1" />
+              <div>
+                <a
+                  href="https://www.efset.org/cert/6SzxAn"
+                  className="font-semibold"
+                >
+                  EF SET English level Certificate 67/100 (C1 Advanced)
+                </a>
+                <p className="text-gray-400">
+                  EF Standard English Test (EF SET)
+                </p>
+                <p className="text-sm text-gray-400">May 2023</p>
               </div>
             </div>
           </div>
@@ -444,6 +461,16 @@ const AboutPage = () => {
                 <h3 className="font-semibold">React Developer Course</h3>
                 <p className="text-gray-400">Scrimba</p>
                 <p className="text-sm text-gray-400">Apr 2024 - Jun 2024</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600 dark:text-orange-400">
+            <div className="flex items-start gap-3">
+              <PiBookOpen className="w-5 h-5 mt-1" />
+              <div>
+                <h3 className="font-semibold">JavaScript Full Course</h3>
+                <p className="text-gray-400">SuperSimpleDev</p>
+                <p className="text-sm text-gray-400">Oct 2023 - Feb 2024</p>
               </div>
             </div>
           </div>
