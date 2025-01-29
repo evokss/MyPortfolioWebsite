@@ -139,10 +139,11 @@ const AboutPage = () => {
               </p>
             </div>
             <p className="mb-4">
-              Develop and implement responsive, user-friendly interfaces using
-              HTML, CSS, and JavaScript (ES6+), ensuring compatibility across
-              devices and browsers. Build scalable React applications,
-              implementing reusable components and state management solutions.
+              Build scalable React applications, implementing reusable
+              components and state management solutions. Develop and implement
+              responsive, user-friendly interfaces using HTML, CSS, and
+              JavaScript (ES6+), ensuring compatibility across devices and
+              browsers.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
