@@ -14,9 +14,14 @@ const HomePage = () => {
           I&apos;m Eva Koss
         </h1>
         {/* Subheading */}
-        <h2 className="text-2xl text-center mb-6 text-gray-900 dark:text-white lg:text-left md:text-2xl lg:text-3xl">
+        <h2 className="text-2xl text-center mb-2 text-gray-900 dark:text-white lg:text-left md:text-2xl lg:text-3xl">
           Frontend developer.
         </h2>
+        {/* Subheading */}
+        <h3 className="text-lg text-center mb-6 text-gray-600 dark:text-gray-400 lg:text-left md:text-2xl lg:text-xl max-w-sm">
+          React, Next, Redux, TypeScript, JavaScript, Tailwind, HTML&amp;CSS,
+          Figma and more.
+        </h3>
         {/* Links and button */}
         <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 sm:space-x-4">
           {/* Resume download link */}
