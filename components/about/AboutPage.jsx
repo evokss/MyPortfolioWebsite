@@ -132,10 +132,10 @@ const AboutPage = () => {
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
             <div className="mb-4">
               <h3 className="text-xl font-semibold text-orange-400">
-                Frontend React Developer
+                Frontend Developer
               </h3>
               <p className="dark:text-gray-500">
-                Freelance • March 2024 - Present
+                Freelance • Jul 2023 - Present • 1 yr 8 mos
               </p>
             </div>
             <p className="mb-4">
@@ -168,10 +168,10 @@ const AboutPage = () => {
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
             <div className="mb-4">
               <h3 className="text-xl font-semibold text-orange-400">
-                React Developer Intern
+                React Frontend Developer
               </h3>
               <p className="dark:text-gray-500">
-                Y_LAB · Internship • Aug 2024 - Oct 2024
+                Y_LAB · Internship • Aug 2024 - Nov 2024 • 4 mos
               </p>
             </div>
             <p className="mb-4">
@@ -202,51 +202,10 @@ const AboutPage = () => {
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
             <div className="mb-4">
               <h3 className="text-xl font-semibold text-orange-400">
-                JavaScript Developer
+                Frontend Web Developer
               </h3>
               <p className="dark:text-gray-500">
-                Open Source Projects & Freelance • Jul 2024 - Feb 2024
-              </p>
-            </div>
-            <p className="mb-4">
-              Developed responsive and interactive web components and pages
-              using pure HTML, CSS, and modern JavaScript (ES6+), leveraging
-              advanced layout techniques like CSS Grid, Flexbox, and frameworks
-              such as Bootstrap and Tailwind CSS. Designed engaging animations
-              and transitions to enhance user experience. Delivered over 170+
-              website components inspired by major tech platforms, contributing
-              to fully functional projects.
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                JavaScript
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Bootstrap
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Tailwind CSS
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                HTML
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Git&GitHub
-              </span>
-            </div>
-          </div>
-
-          {/* Previous Role */}
-          <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-orange-400">
-                Frontend Web Developer Intern
-              </h3>
-              <p className="dark:text-gray-500">
-                Itransition Group • Mar 2023 - Jun 2023
+                Itransition Group • Mar 2023 - Jun 2023 • 4 mos
               </p>
             </div>
             <p className="mb-4">
@@ -287,7 +246,8 @@ const AboutPage = () => {
                 HTML/CSS Developer
               </h3>
               <p className="dark:text-gray-500">
-                Scientific-Production Center MAX CJSC • Feb 2020 - Mar 2021
+                Scientific-Production Center MAX CJSC • Feb 2020 - Mar 2021 • 1
+                yr 2 mos
               </p>
             </div>
             <p className="mb-4">
@@ -321,7 +281,7 @@ const AboutPage = () => {
                 Microsoft Student Partner
               </h3>
               <p className="dark:text-gray-500">
-                Microsoft • Apr 2019 - Dec 2019
+                Microsoft • Apr 2019 - Mar 2020 • 1 yr
               </p>
             </div>
             <p className="mb-4">
