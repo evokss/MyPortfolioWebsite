@@ -153,6 +153,9 @@ const AboutPage = () => {
                 TypeScript
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                JavaScript (ES6+)
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Next.js
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
@@ -187,7 +190,16 @@ const AboutPage = () => {
                 Redux
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Node.js
+                TypeScript
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                JavaScript (ES6+)
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Babel
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Webpack
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Figma
@@ -219,19 +231,19 @@ const AboutPage = () => {
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                HTML
+                JavaScript (ES6+)
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                CSS
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                JavaScript
+                Node.js
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Bootstrap
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Node.js
+                HTML5 & CSS3
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Heroku
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Git&GitHub
@@ -260,13 +272,16 @@ const AboutPage = () => {
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                HTML
+                HTML5 & CSS3
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                CSS
+                JavaScript (ES6+)
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                JavaScript
+                Bootstrap
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                SPA
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Git&GitHub
@@ -295,25 +310,25 @@ const AboutPage = () => {
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                JavaScript
+                Web Development
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                HTML
+                JavaScript ES6
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                CSS
+                HTML5 & CSS3
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                C#
+                Responsive Web Design
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                C++
+                Visual Studio
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Python
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Team Leadership
+                Git&GitHub
               </span>
             </div>
           </div>
@@ -327,14 +342,14 @@ const AboutPage = () => {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {[
-            "React.js/ Next.js",
+            "React/ Next.js",
             "JavaScript (ES6+)",
             "TypeScript",
             "Git/ GitHub/ GitLab",
             "MongoDB",
-            "HTML5/ CSS3",
+            "HTML5 & CSS3",
             "Node.js/ NPM/ PNPM",
-            "Bootstrap v5/ Tailwind CSS",
+            "Bootstrap/ Tailwind CSS",
           ].map((skill, index) => (
             <div
               key={index}
@@ -421,7 +436,7 @@ const AboutPage = () => {
               <div>
                 <h3 className="font-semibold">React Developer Course</h3>
                 <p className="text-gray-400">Scrimba</p>
-                <p className="text-sm text-gray-400">Apr 2024 - Jun 2024</p>
+                <p className="text-sm text-gray-400">Jul 2024 - Sep 2024</p>
               </div>
             </div>
           </div>
@@ -431,7 +446,7 @@ const AboutPage = () => {
               <div>
                 <h3 className="font-semibold">JavaScript Full Course</h3>
                 <p className="text-gray-400">SuperSimpleDev</p>
-                <p className="text-sm text-gray-400">Oct 2023 - Feb 2024</p>
+                <p className="text-sm text-gray-400">Feb 2023 - Jul 2023</p>
               </div>
             </div>
           </div>
