@@ -139,12 +139,30 @@ const AboutPage = () => {
               </p>
             </div>
             <p className="mb-4">
-              Build scalable React applications, implementing reusable
-              components and state management solutions. Develop and implement
-              responsive, user-friendly interfaces using HTML, CSS, and
-              JavaScript (ES6+), ensuring compatibility across devices and
-              browsers.
+              Specializing in building modern React applications and responsive
+              interfaces for diverse clients, delivering high-performance
+              solutions with a focus on clean code and user experience.
             </p>
+            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+              <li>
+                Led development of responsive React applications with TypeScript
+                and Next.js, focusing on performance optimization and
+                mobile-first design.
+              </li>
+              <li>
+                Built scalable frontend architecture using Redux state
+                management and custom React hooks, reducing codebase complexity.
+              </li>
+              <li>
+                Implemented comprehensive UI component libraries with Tailwind
+                CSS and established unit testing practices using Jest.
+              </li>
+              <li>
+                Collaborated with design teams using Figma to deliver
+                pixel-perfect interfaces while maintaining clean, maintainable
+                code standards.
+              </li>
+            </ul>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 React
@@ -178,10 +196,31 @@ const AboutPage = () => {
               </p>
             </div>
             <p className="mb-4">
-              Developed a fully functional e-commerce prototype with features
-              including product listing, pagination, category filtering,
-              shopping cart functionality, and product detail views.
+              Y_LAB is a digital transformation company specializing in fintech,
+              e-commerce, and enterprise solutions. Focused on implementing
+              advanced IT projects and business process automation across
+              multiple industries including logistics, telecom, and blockchain.
             </p>
+            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+              <li>
+                Built responsive React applications using TypeScript during
+                intensive internship program, focusing on modern development
+                practices.
+              </li>
+              <li>
+                Developed feature-rich components implementing Redux state
+                management and REST API integration in training projects.
+              </li>
+              <li>
+                Created UI component library with Tailwind CSS following design
+                system principles and best practices.
+              </li>
+              <li>
+                Applied modern frontend tooling including Webpack and Babel
+                while learning unit testing and version control workflows in
+                team environment.
+              </li>
+            </ul>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 React
@@ -217,18 +256,31 @@ const AboutPage = () => {
                 Frontend Web Developer
               </h3>
               <p className="dark:text-gray-500">
-                Itransition Group • Mar 2023 - Jun 2023 • 4 mos
+                Itransition Group • Internship • Mar 2023 - Jun 2023 • 4 mos
               </p>
             </div>
             <p className="mb-4">
-              Created clean, semantic, and accessible HTML markup and styled web
-              pages following best practices and web standards. Implemented
-              responsive designs using CSS frameworks like Bootstrap and
-              enhanced functionality with modern JavaScript (ES6+). Utilized
-              Node.js for server-side development and integrated MongoDB for
-              efficient data storage and retrieval. Actively managed version
-              control and collaborative coding through Git and GitHub.
+              Itransition is a global software development company delivering
+              enterprise-grade solutions with deep technological expertise and
+              market-specific knowledge. Specializes in creating sophisticated
+              corporate and consumer applications tailored to specific business
+              contexts.
             </p>
+            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+              <li>
+                Developed dynamic, responsive web interfaces using HTML5, CSS3,
+                JavaScript ES6, and Bootstrap to deliver seamless user
+                experiences across devices.
+              </li>
+              <li>
+                Leveraged advanced DOM manipulation along with Flexbox and Grid
+                to optimize layouts and enhance interactive performance.
+              </li>
+              <li>
+                Collaborated effectively using Git and GitHub, integrating
+                Node.js and MongoDB to support scalable, full-stack solutions.
+              </li>
+            </ul>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 JavaScript (ES6+)
@@ -243,7 +295,7 @@ const AboutPage = () => {
                 HTML5 & CSS3
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Heroku
+                MongoDB
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Git&GitHub
@@ -258,18 +310,32 @@ const AboutPage = () => {
                 HTML/CSS Developer
               </h3>
               <p className="dark:text-gray-500">
-                Scientific-Production Center MAX CJSC • Feb 2020 - Mar 2021 • 1
-                yr 2 mos
+                Scientific-Production Center MAX CJSC • Contract • Feb 2020 -
+                Mar 2021 • 1 yr
               </p>
             </div>
             <p className="mb-4">
-              Crafted responsive web experiences using advanced HTML and CSS
-              techniques, ensuring clean, semantic markup aligned with web
-              standards and best practices. Engineered high-performance websites
-              by optimizing HTML/CSS structure. Utilized Git and GitHub for
-              efficient version control and collaborative development,
-              contributing to seamless and scalable web solutions.
+              Scientific-Production Center MAX is a leading developer and
+              integrator of secure cloud computing infrastructure solutions.
+              Provides scalable hardware-software complexes for virtual
+              environments, focusing on protected data storage and deployment of
+              intelligent workspaces for office and development activities.
             </p>
+            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+              <li>
+                Engineered dynamic single-page applications (SPAs) using
+                advanced HTML/CSS techniques to deliver seamless, user-friendly
+                interfaces.
+              </li>
+              <li>
+                Consistently produced high-quality, responsive designs that
+                boosted user engagement and navigability.
+              </li>
+              <li>
+                Collaborated with cross-functional teams to align design and
+                functionality with project goals.
+              </li>
+            </ul>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 HTML5 & CSS3
@@ -296,18 +362,30 @@ const AboutPage = () => {
                 Microsoft Student Partner
               </h3>
               <p className="dark:text-gray-500">
-                Microsoft • Apr 2019 - Mar 2020 • 1 yr
+                Microsoft • Apprenticeship • Apr 2019 - Mar 2020 • 1 yr
               </p>
             </div>
             <p className="mb-4">
-              Acquired proficiency in emerging technologies and programming
-              languages through extensive self-learning, including
-              documentation, tutorials, and online forums. Organized and led
-              technical workshops and events on Microsoft technologies for
-              peers. Achieved notable success by leading a team to victory in
-              two hackathons, demonstrating rapid prototyping skills and
-              innovative problem-solving.
+              Microsoft is a global technology leader pioneering personal
+              computing software, cloud services, and enterprise solutions since
+              1975. World's largest software manufacturer, driving innovation
+              across cloud computing, AI, and productivity tools while shaping
+              the future of digital transformation.
             </p>
+            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+              <li>
+                Developed full-stack web applications with JavaScript, React,
+                Python, and Node.js, emphasizing high-quality code.
+              </li>
+              <li>
+                Rapidly learned and showcased new Microsoft technologies,
+                leveraging documentation and best practices.
+              </li>
+              <li>
+                Contributed to tech lectures, coding challenges, and unit
+                testing to enhance technical skills.
+              </li>
+            </ul>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Web Development
