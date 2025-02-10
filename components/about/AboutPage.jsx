@@ -368,9 +368,9 @@ const AboutPage = () => {
             <p className="mb-4">
               Microsoft is a global technology leader pioneering personal
               computing software, cloud services, and enterprise solutions since
-              1975. World's largest software manufacturer, driving innovation
-              across cloud computing, AI, and productivity tools while shaping
-              the future of digital transformation.
+              1975. World&apos;s largest software manufacturer, driving
+              innovation across cloud computing, AI, and productivity tools
+              while shaping the future of digital transformation.
             </p>
             <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
               <li>
