@@ -41,42 +41,23 @@ const AboutPage = () => {
       <section className="mb-16">
         <h2 className="text-2xl font-bold mb-6 text-orange-400">My Story</h2>
         <div className="space-y-4">
-          <div className="bg-white border-2 border-orange-300 dark:bg-white/5 dark:border-rose-600 p-6 rounded-lg">
-            <ul className="space-y-4 text-gray-600 dark:text-gray-400">
-              <li className="flex gap-2">
-                <span className="text-lg dark:text-rose-600 text-orange-400">
-                  •
-                </span>
-                <p className="mb-4">
-                  Throughout my academic journey and early career, I&apos;ve
-                  been actively working on various projects and with exceptional
-                  teams, even managed to serve as a Microsoft Student Partner
-                  and participate in and win several hackathons
-                </p>
+          <div className="bg-white border-2 border-orange-300 dark:bg-white/5 dark:border-rose-600 py-8 px-8 rounded-lg">
+            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-2 space-y-4 text-gray-600 dark:text-gray-400">
+              <li>
+                Throughout my academic journey and early career, I successfully
+                complete my first higher education in Computer Science, serve as
+                a Microsoft Student Partner, and participate in and win many
+                coding challenges (hackathons).
               </li>
-              <li className="flex gap-2">
-                <span className="text-lg dark:text-rose-600 text-orange-400">
-                  •
-                </span>
-                <p className="mb-4">
-                  In my free time, I&apos;ve been consistently engaging in
-                  open-source and freelance web development projects, further
-                  fueling my love for crafting exceptional web experiences and
-                  expanding my practical knowledge.
-                </p>
+              <li>
+                I consistently develop my own projects and contribute my skills
+                and knowledge to various projects with exceptional teams.
               </li>
-              <li className="flex gap-2">
-                <span className="text-lg dark:text-rose-600 text-orange-400">
-                  •
-                </span>
-                <p className="mb-4">
-                  These diverse experiences have honed my{" "}
-                  <strong>
-                    problem-solving, teamwork, adaptability, and ability to stay
-                    updated with the latest technologies
-                  </strong>
-                  .
-                </p>
+              <li>
+                In my free time, I engage in open-source and freelance web
+                development projects, further fueling my love for crafting
+                exceptional web experiences and expanding my practical
+                knowledge.
               </li>
             </ul>
           </div>
