@@ -62,13 +62,12 @@ export const projects = [
   },
   {
     id: 7,
-    name: "React Fun Facts Mobile App",
+    name: "React & TypeScript Fun Facts Mobile App",
     description:
-      "A mobile-first application presenting essential React facts in a responsive and user-friendly interface. It features a structured design with a reusable Navbar and Main components.",
+      "A mobile-first application presenting essential React and TypeScript facts in a responsive and user-friendly interface. It features a structured design with a reusable Navbar and Main components.",
     technologies: ["React", "HTML", "CSS"],
-    githubLink:
-      "https://github.com/evokss/ReactProjects/tree/main/react-info-page",
-    deployLink: "https://react-info-page-evas-projects.netlify.app/",
+    githubLink: "https://github.com/evokss/React-TS-Facts-Project",
+    deployLink: "https://react-ts-facts-project.vercel.app/",
     imageUrl: "/icons/react.png",
   },
 ];
