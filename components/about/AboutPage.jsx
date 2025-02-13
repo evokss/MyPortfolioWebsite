@@ -309,10 +309,6 @@ const AboutPage = () => {
                 interfaces.
               </li>
               <li>
-                Consistently produced high-quality, responsive designs that
-                boosted user engagement and navigability.
-              </li>
-              <li>
                 Collaborated with cross-functional teams to align design and
                 functionality with project goals.
               </li>
@@ -329,6 +325,9 @@ const AboutPage = () => {
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 SPA
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Responsive Web Design
               </span>
               <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
                 Git&GitHub
