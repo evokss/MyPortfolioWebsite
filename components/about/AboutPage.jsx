@@ -288,11 +288,65 @@ const AboutPage = () => {
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
             <div className="mb-4">
               <h3 className="text-xl font-semibold text-orange-400">
+                Professional development
+              </h3>
+              <p className="dark:text-gray-500">
+                Career Break • Jul 2021 - Feb 2023 • 1 yr 8 mos
+              </p>
+            </div>
+            <p className="mb-4">
+              Emigrated from Russia to Georgia while evolving from HTML/CSS
+              specialist to modern frontend developer.
+            </p>
+            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+              <li>
+                Advanced from static webpage development to building dynamic web
+                applications using JavaScript, modern frameworks, and state
+                management
+              </li>
+              <li>
+                Deepened technical expertise in frontend architecture,
+                component-based development, and API integration
+              </li>
+              <li>
+                Strengthened understanding of web fundamentals including browser
+                rendering, performance optimization, and security best practices
+              </li>
+            </ul>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                JavaScript (ES6+)
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Tailwind CSS
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Web Development
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                React
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                API
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Node.js
+              </span>
+              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                Git&GitHub
+              </span>
+            </div>
+          </div>
+
+          {/* Previous Role */}
+          <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-orange-400">
                 HTML/CSS Developer
               </h3>
               <p className="dark:text-gray-500">
                 Scientific-Production Center MAX CJSC • Contract • Feb 2020 -
-                Mar 2021 • 1 yr
+                Jul 2021 • 1 yr 6 mos
               </p>
             </div>
             <p className="mb-4">
