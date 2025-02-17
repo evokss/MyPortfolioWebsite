@@ -1,5 +1,7 @@
-import React from "react";
-import { IoLanguageOutline } from "react-icons/io5";
+"use client";
+
+import React, { useState } from "react";
+import { IoLanguageOutline, IoChevronDownOutline } from "react-icons/io5";
 import {
   PiGraduationCapLight,
   PiHeartLight,
@@ -10,6 +12,12 @@ import {
 } from "react-icons/pi";
 
 const AboutPage = () => {
+  const [openSection, setOpenSection] = useState(null);
+
+  const toggleSection = (sectionId) => {
+    setOpenSection(openSection === sectionId ? null : sectionId);
+  };
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
       {/* Hero Section with Resume Download */}
@@ -111,59 +119,78 @@ const AboutPage = () => {
         <div className="space-y-8 text-gray-600 dark:text-gray-400">
           {/* Current Role */}
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-orange-400">
-                Frontend Developer
-              </h3>
-              <p className="dark:text-gray-500">
-                Freelance • Jul 2023 - Present • 1 yr 8 mos
-              </p>
+            <div className="mb-4 flex justify-between">
+              <div>
+                <h3 className="text-xl font-semibold text-orange-400">
+                  Frontend Developer
+                </h3>
+                <p className="dark:text-gray-500">
+                  Freelance • Jul 2023 - Present • 1 yr 8 mos
+                </p>
+              </div>
+              <button
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                onClick={() => toggleSection(1)}
+              >
+                <IoChevronDownOutline
+                  className={`w-5 h-5 text-gray-500 transition-transform duration-300 ease-in-out ${
+                    openSection ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </button>
             </div>
-            <p className="mb-4">
-              Specializing in building modern React applications and responsive
-              interfaces for diverse clients, delivering high-performance
-              solutions with a focus on clean code and user experience.
-            </p>
-            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
-              <li>
-                Led development of responsive React applications with TypeScript
-                and Next.js, focusing on performance optimization and
-                mobile-first design.
-              </li>
-              <li>
-                Built scalable frontend architecture using Redux state
-                management and custom React hooks, reducing codebase complexity.
-              </li>
-              <li>
-                Implemented comprehensive UI component libraries with Tailwind
-                CSS and established unit testing practices using Jest.
-              </li>
-              <li>
-                Collaborated with design teams using Figma to deliver
-                pixel-perfect interfaces while maintaining clean, maintainable
-                code standards.
-              </li>
-            </ul>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                React
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                TypeScript
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                JavaScript (ES6+)
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Next.js
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Tailwind CSS
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Git&GitHub
-              </span>
-            </div>
+            {openSection === 1 && (
+              <div>
+                <p className="mb-4">
+                  Specializing in building modern React applications and
+                  responsive interfaces for diverse clients, delivering
+                  high-performance solutions with a focus on clean code and user
+                  experience.
+                </p>
+                <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+                  <li>
+                    Led development of responsive React applications with
+                    TypeScript and Next.js, focusing on performance optimization
+                    and mobile-first design.
+                  </li>
+                  <li>
+                    Built scalable frontend architecture using Redux state
+                    management and custom React hooks, reducing codebase
+                    complexity.
+                  </li>
+                  <li>
+                    Implemented comprehensive UI component libraries with
+                    Tailwind CSS and established unit testing practices using
+                    Jest.
+                  </li>
+                  <li>
+                    Collaborated with design teams using Figma to deliver
+                    pixel-perfect interfaces while maintaining clean,
+                    maintainable code standards.
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    React
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    TypeScript
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    JavaScript (ES6+)
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Next.js
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Tailwind CSS
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Git&GitHub
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Previous Role */}
