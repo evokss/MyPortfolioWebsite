@@ -134,7 +134,7 @@ const AboutPage = () => {
               >
                 <IoChevronDownOutline
                   className={`w-5 h-5 text-gray-500 transition-transform duration-300 ease-in-out ${
-                    openSection ? "rotate-180" : "rotate-0"
+                    openSection === 1 ? "rotate-180" : "rotate-0"
                   }`}
                 />
               </button>
@@ -195,281 +195,367 @@ const AboutPage = () => {
 
           {/* Previous Role */}
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-orange-400">
-                React Frontend Developer
-              </h3>
-              <p className="dark:text-gray-500">
-                Y_LAB · Internship • Aug 2024 - Nov 2024 • 4 mos
-              </p>
+            <div className="mb-4 flex justify-between">
+              <div>
+                <h3 className="text-xl font-semibold text-orange-400">
+                  React Frontend Developer
+                </h3>
+                <p className="dark:text-gray-500">
+                  Y_LAB · Internship • Aug 2024 - Nov 2024 • 4 mos
+                </p>
+              </div>
+              <button
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                onClick={() => toggleSection(2)}
+              >
+                <IoChevronDownOutline
+                  className={`w-5 h-5 text-gray-500 transition-transform duration-300 ease-in-out ${
+                    openSection === 2 ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </button>
             </div>
-            <p className="mb-4">
-              Y_LAB is a digital transformation company specializing in fintech,
-              e-commerce, and enterprise solutions. Focused on implementing
-              advanced IT projects and business process automation across
-              multiple industries including logistics, telecom, and blockchain.
-            </p>
-            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
-              <li>
-                Built responsive React applications using TypeScript during
-                intensive internship program, focusing on modern development
-                practices.
-              </li>
-              <li>
-                Developed feature-rich components implementing Redux state
-                management and REST API integration in training projects.
-              </li>
-              <li>
-                Created UI component library with Tailwind CSS following design
-                system principles and best practices.
-              </li>
-              <li>
-                Applied modern frontend tooling including Webpack and Babel
-                while learning unit testing and version control workflows in
-                team environment.
-              </li>
-            </ul>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                React
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Redux
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                TypeScript
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                JavaScript (ES6+)
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Babel
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Webpack
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Figma
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Git&GitHub
-              </span>
-            </div>
+            {openSection === 2 && (
+              <div>
+                <p className="mb-4">
+                  Y_LAB is a digital transformation company specializing in
+                  fintech, e-commerce, and enterprise solutions. Focused on
+                  implementing advanced IT projects and business process
+                  automation across multiple industries including logistics,
+                  telecom, and blockchain.
+                </p>
+                <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+                  <li>
+                    Built responsive React applications using TypeScript during
+                    intensive internship program, focusing on modern development
+                    practices.
+                  </li>
+                  <li>
+                    Developed feature-rich components implementing Redux state
+                    management and REST API integration in training projects.
+                  </li>
+                  <li>
+                    Created UI component library with Tailwind CSS following
+                    design system principles and best practices.
+                  </li>
+                  <li>
+                    Applied modern frontend tooling including Webpack and Babel
+                    while learning unit testing and version control workflows in
+                    team environment.
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    React
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Redux
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    TypeScript
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    JavaScript (ES6+)
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Babel
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Webpack
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Figma
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Git&GitHub
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Previous Role */}
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-orange-400">
-                Frontend Web Developer
-              </h3>
-              <p className="dark:text-gray-500">
-                Itransition Group • Internship • Mar 2023 - Jun 2023 • 4 mos
-              </p>
+            <div className="mb-4 flex justify-between">
+              <div>
+                <h3 className="text-xl font-semibold text-orange-400">
+                  Frontend Web Developer
+                </h3>
+                <p className="dark:text-gray-500">
+                  Itransition Group • Internship • Mar 2023 - Jun 2023 • 4 mos
+                </p>
+              </div>
+              <button
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                onClick={() => toggleSection(3)}
+              >
+                <IoChevronDownOutline
+                  className={`w-5 h-5 text-gray-500 transition-transform duration-300 ease-in-out ${
+                    openSection === 3 ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </button>
             </div>
-            <p className="mb-4">
-              Itransition is a global software development company delivering
-              enterprise-grade solutions with deep technological expertise and
-              market-specific knowledge. Specializes in creating sophisticated
-              corporate and consumer applications tailored to specific business
-              contexts.
-            </p>
-            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
-              <li>
-                Developed dynamic, responsive web interfaces using HTML5, CSS3,
-                JavaScript ES6, and Bootstrap to deliver seamless user
-                experiences across devices.
-              </li>
-              <li>
-                Leveraged advanced DOM manipulation along with Flexbox and Grid
-                to optimize layouts and enhance interactive performance.
-              </li>
-              <li>
-                Collaborated effectively using Git and GitHub, integrating
-                Node.js and MongoDB to support scalable, full-stack solutions.
-              </li>
-            </ul>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                JavaScript (ES6+)
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Node.js
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Bootstrap
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                HTML5 & CSS3
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                MongoDB
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Git&GitHub
-              </span>
-            </div>
+            {openSection === 3 && (
+              <div>
+                <p className="mb-4">
+                  Itransition is a global software development company
+                  delivering enterprise-grade solutions with deep technological
+                  expertise and market-specific knowledge. Specializes in
+                  creating sophisticated corporate and consumer applications
+                  tailored to specific business contexts.
+                </p>
+                <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+                  <li>
+                    Developed dynamic, responsive web interfaces using HTML5,
+                    CSS3, JavaScript ES6, and Bootstrap to deliver seamless user
+                    experiences across devices.
+                  </li>
+                  <li>
+                    Leveraged advanced DOM manipulation along with Flexbox and
+                    Grid to optimize layouts and enhance interactive
+                    performance.
+                  </li>
+                  <li>
+                    Collaborated effectively using Git and GitHub, integrating
+                    Node.js and MongoDB to support scalable, full-stack
+                    solutions.
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    JavaScript (ES6+)
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Node.js
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Bootstrap
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    HTML5 & CSS3
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    MongoDB
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Git&GitHub
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Previous Role */}
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-orange-400">
-                Professional development
-              </h3>
-              <p className="dark:text-gray-500">
-                Career Break • Jul 2021 - Feb 2023 • 1 yr 8 mos
-              </p>
+            <div className="mb-4 flex justify-between">
+              <div>
+                <h3 className="text-xl font-semibold text-orange-400">
+                  Professional development
+                </h3>
+                <p className="dark:text-gray-500">
+                  Career Break • Jul 2021 - Feb 2023 • 1 yr 8 mos
+                </p>
+              </div>
+              <button
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                onClick={() => toggleSection(4)}
+              >
+                <IoChevronDownOutline
+                  className={`w-5 h-5 text-gray-500 transition-transform duration-300 ease-in-out ${
+                    openSection === 4 ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </button>
             </div>
-            <p className="mb-4">
-              Emigrated from Russia to Georgia while evolving from HTML/CSS
-              specialist to modern frontend developer.
-            </p>
-            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
-              <li>
-                Advanced from static webpage development to building dynamic web
-                applications using JavaScript, modern frameworks, and state
-                management
-              </li>
-              <li>
-                Deepened technical expertise in frontend architecture,
-                component-based development, and API integration
-              </li>
-              <li>
-                Strengthened understanding of web fundamentals including browser
-                rendering, performance optimization, and security best practices
-              </li>
-            </ul>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                JavaScript (ES6+)
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Tailwind CSS
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Web Development
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                React
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                API
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Node.js
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Git&GitHub
-              </span>
-            </div>
+            {openSection === 4 && (
+              <div>
+                <p className="mb-4">
+                  Emigrated from Russia to Georgia while evolving from HTML/CSS
+                  specialist to modern frontend developer.
+                </p>
+                <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+                  <li>
+                    Advanced from static webpage development to building dynamic
+                    web applications using JavaScript, modern frameworks, and
+                    state management
+                  </li>
+                  <li>
+                    Deepened technical expertise in frontend architecture,
+                    component-based development, and API integration
+                  </li>
+                  <li>
+                    Strengthened understanding of web fundamentals including
+                    browser rendering, performance optimization, and security
+                    best practices
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    JavaScript (ES6+)
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Tailwind CSS
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Web Development
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    React
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    API
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Node.js
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Git&GitHub
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Previous Role */}
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-orange-400">
-                HTML/CSS Developer
-              </h3>
-              <p className="dark:text-gray-500">
-                Scientific-Production Center MAX CJSC • Contract • Feb 2020 -
-                Jul 2021 • 1 yr 6 mos
-              </p>
+            <div className="mb-4 flex justify-between">
+              <div>
+                <h3 className="text-xl font-semibold text-orange-400">
+                  HTML/CSS Developer
+                </h3>
+                <p className="dark:text-gray-500">
+                  Scientific-Production Center MAX CJSC • Contract • Feb 2020 -
+                  Jul 2021 • 1 yr 6 mos
+                </p>
+              </div>
+              <button
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                onClick={() => toggleSection(5)}
+              >
+                <IoChevronDownOutline
+                  className={`w-5 h-5 text-gray-500 transition-transform duration-300 ease-in-out ${
+                    openSection === 5 ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </button>
             </div>
-            <p className="mb-4">
-              Scientific-Production Center MAX is a leading developer and
-              integrator of secure cloud computing infrastructure solutions.
-              Provides scalable hardware-software complexes for virtual
-              environments, focusing on protected data storage and deployment of
-              intelligent workspaces for office and development activities.
-            </p>
-            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
-              <li>
-                Engineered dynamic single-page applications (SPAs) using
-                advanced HTML/CSS techniques to deliver seamless, user-friendly
-                interfaces.
-              </li>
-              <li>
-                Collaborated with cross-functional teams to align design and
-                functionality with project goals.
-              </li>
-            </ul>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                HTML5 & CSS3
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                JavaScript (ES6+)
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Bootstrap
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                SPA
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Responsive Web Design
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Git&GitHub
-              </span>
-            </div>
+            {openSection === 5 && (
+              <div>
+                <p className="mb-4">
+                  Scientific-Production Center MAX is a leading developer and
+                  integrator of secure cloud computing infrastructure solutions.
+                  Provides scalable hardware-software complexes for virtual
+                  environments, focusing on protected data storage and
+                  deployment of intelligent workspaces for office and
+                  development activities.
+                </p>
+                <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+                  <li>
+                    Engineered dynamic single-page applications (SPAs) using
+                    advanced HTML/CSS techniques to deliver seamless,
+                    user-friendly interfaces.
+                  </li>
+                  <li>
+                    Collaborated with cross-functional teams to align design and
+                    functionality with project goals.
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    HTML5 & CSS3
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    JavaScript (ES6+)
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Bootstrap
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    SPA
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Responsive Web Design
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Git&GitHub
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Previous Role */}
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-orange-400">
-                Microsoft Student Partner
-              </h3>
-              <p className="dark:text-gray-500">
-                Microsoft • Apprenticeship • Apr 2019 - Mar 2020 • 1 yr
-              </p>
+            <div className="mb-4 flex justify-between">
+              <div>
+                <h3 className="text-xl font-semibold text-orange-400">
+                  Microsoft Student Partner
+                </h3>
+                <p className="dark:text-gray-500">
+                  Microsoft • Apprenticeship • Apr 2019 - Mar 2020 • 1 yr
+                </p>
+              </div>
+              <button
+                className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                onClick={() => toggleSection(6)}
+              >
+                <IoChevronDownOutline
+                  className={`w-5 h-5 text-gray-500 transition-transform duration-300 ease-in-out ${
+                    openSection === 6 ? "rotate-180" : "rotate-0"
+                  }`}
+                />
+              </button>
             </div>
-            <p className="mb-4">
-              Microsoft is a global technology leader pioneering personal
-              computing software, cloud services, and enterprise solutions since
-              1975. World&apos;s largest software manufacturer, driving
-              innovation across cloud computing, AI, and productivity tools
-              while shaping the future of digital transformation.
-            </p>
-            <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
-              <li>
-                Developed full-stack web applications with JavaScript, React,
-                Python, and Node.js, emphasizing high-quality code.
-              </li>
-              <li>
-                Rapidly learned and showcased new Microsoft technologies,
-                leveraging documentation and best practices.
-              </li>
-              <li>
-                Contributed to tech lectures, coding challenges, and unit
-                testing to enhance technical skills.
-              </li>
-            </ul>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Web Development
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                JavaScript ES6
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                HTML5 & CSS3
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Responsive Web Design
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Visual Studio
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Python
-              </span>
-              <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
-                Git&GitHub
-              </span>
-            </div>
+            {openSection === 6 && (
+              <div>
+                <p className="mb-4">
+                  Microsoft is a global technology leader pioneering personal
+                  computing software, cloud services, and enterprise solutions
+                  since 1975. World&apos;s largest software manufacturer,
+                  driving innovation across cloud computing, AI, and
+                  productivity tools while shaping the future of digital
+                  transformation.
+                </p>
+                <ul className="list-disc marker:dark:text-rose-600 marker:text-orange-400 m-6 space-y-4 text-gray-600 dark:text-gray-400">
+                  <li>
+                    Developed full-stack web applications with JavaScript,
+                    React, Python, and Node.js, emphasizing high-quality code.
+                  </li>
+                  <li>
+                    Rapidly learned and showcased new Microsoft technologies,
+                    leveraging documentation and best practices.
+                  </li>
+                  <li>
+                    Contributed to tech lectures, coding challenges, and unit
+                    testing to enhance technical skills.
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Web Development
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    JavaScript ES6
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    HTML5 & CSS3
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Responsive Web Design
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Visual Studio
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Python
+                  </span>
+                  <span className="px-3 py-1 text-gray-800 bg-orange-100 dark:bg-rose-600/60 dark:text-gray-100 rounded-full text-sm">
+                    Git&GitHub
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
