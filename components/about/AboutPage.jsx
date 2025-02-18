@@ -107,8 +107,8 @@ const AboutPage = () => {
             <div className="flex items-center gap-3 mb-2">
               <PiHeartLight className="w-6 h-6 flex-shrink-0 dark:text-orange-400 text-rose-600" />
               <p>
-                Outside of IT: competitive athlete, coding enthusiast, strategic
-                board gamer, and avid multilingual reader
+                Outside of IT: enthusiast of sports and an active lifestyle,
+                strategic board gamer, avid multilingual reader
               </p>
             </div>
           </div>
