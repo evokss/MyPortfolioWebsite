@@ -78,7 +78,7 @@ const AboutPage = () => {
         <div className="grid md:grid-cols-2 gap-6 text-gray-800 dark:text-gray-400">
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
             <div className="flex items-center gap-3 mb-2">
-              <PiBriefcaseLight className="w-7 h-7 dark:text-orange-400 text-rose-600" />
+              <PiBriefcaseLight className="w-6 h-6 flex-shrink-0 dark:text-orange-400 text-rose-600" />
               <p>
                 Owner of a drive to continuously build and deliver captivating
                 and user-friendly web applications
@@ -87,13 +87,16 @@ const AboutPage = () => {
           </div>
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
             <div className="flex items-center gap-3 mb-2">
-              <PiGraduationCapLight className="w-5 h-5 dark:text-orange-400 text-rose-600" />
-              <p>A Computer Science graduate</p>
+              <PiGraduationCapLight className="w-6 h-6 flex-shrink-0 dark:text-orange-400 text-rose-600" />
+              <p>
+                A results-driven Computer Science graduate specializing in
+                software development and problem-solving
+              </p>
             </div>
           </div>
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
             <div className="flex items-center gap-3 mb-2">
-              <PiFileCodeLight className="w-6 h-6 dark:text-orange-400 text-rose-600" />
+              <PiFileCodeLight className="w-6 h-6 flex-shrink-0 dark:text-orange-400 text-rose-600" />
               <p>
                 Love working with React, Node.js, and TypeScript as my go-to
                 tech stack
@@ -102,9 +105,10 @@ const AboutPage = () => {
           </div>
           <div className="bg-white/5 p-6 rounded-lg bg-white border-2 border-orange-300 dark:border-rose-600">
             <div className="flex items-center gap-3 mb-2">
-              <PiHeartLight className="w-5 h-5 dark:text-orange-400 text-rose-600" />
+              <PiHeartLight className="w-6 h-6 flex-shrink-0 dark:text-orange-400 text-rose-600" />
               <p>
-                Outside of IT: pianist, voracious reader, singer, and artist
+                Outside of IT: competitive athlete, coding enthusiast, strategic
+                board gamer, and avid multilingual reader
               </p>
             </div>
           </div>
