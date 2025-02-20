@@ -128,8 +128,10 @@ const AboutPage = () => {
                 <h3 className="text-xl font-semibold text-orange-400">
                   Frontend Developer
                 </h3>
-                <p className="dark:text-gray-500">
-                  Freelance • Jul 2023 - Present • 1 yr 8 mos
+                <p className="dark:text-gray-500 flex flex-col sm:flex-row sm:items-center">
+                  <span>Freelance</span>
+                  <span className="hidden sm:inline mx-2">•</span>
+                  <span>Jul 2023 - Present • 1 yr 8 mos</span>
                 </p>
               </div>
               <button
