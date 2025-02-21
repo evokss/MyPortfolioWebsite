@@ -206,8 +206,12 @@ const AboutPage = () => {
                 <h3 className="text-xl font-semibold text-orange-400">
                   React Frontend Developer
                 </h3>
-                <p className="dark:text-gray-500">
-                  Y_LAB · Internship • Aug 2024 - Nov 2024 • 4 mos
+                <p className="dark:text-gray-500 flex flex-col sm:flex-row sm:items-center">
+                  <span>Y_LAB</span>
+                  <span className="hidden sm:inline mx-2">•</span>
+                  <span>Internship</span>
+                  <span className="hidden sm:inline mx-2">•</span>
+                  <span>Aug 2024 - Nov 2024 • 4 mos</span>
                 </p>
               </div>
               <button
@@ -287,8 +291,12 @@ const AboutPage = () => {
                 <h3 className="text-xl font-semibold text-orange-400">
                   Frontend Web Developer
                 </h3>
-                <p className="dark:text-gray-500">
-                  Itransition Group • Internship • Mar 2023 - Jun 2023 • 4 mos
+                <p className="dark:text-gray-500 flex flex-col sm:flex-row sm:items-center">
+                  <span>Itransition Group</span>
+                  <span className="hidden sm:inline mx-2">•</span>
+                  <span>Internship</span>
+                  <span className="hidden sm:inline mx-2">•</span>
+                  <span>Mar 2023 - Jun 2023 • 4 mos</span>
                 </p>
               </div>
               <button
@@ -359,8 +367,10 @@ const AboutPage = () => {
                 <h3 className="text-xl font-semibold text-orange-400">
                   Professional development
                 </h3>
-                <p className="dark:text-gray-500">
-                  Career Break • Jul 2021 - Feb 2023 • 1 yr 8 mos
+                <p className="dark:text-gray-500 flex flex-col sm:flex-row sm:items-center">
+                  <span>Career Break</span>
+                  <span className="hidden sm:inline mx-2">•</span>
+                  <span>Jul 2021 - Feb 2023 • 1 yr 8 mos</span>
                 </p>
               </div>
               <button
