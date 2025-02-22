@@ -440,9 +440,12 @@ const AboutPage = () => {
                 <h3 className="text-xl font-semibold text-orange-400">
                   HTML/CSS Developer
                 </h3>
-                <p className="dark:text-gray-500">
-                  Scientific-Production Center MAX CJSC • Contract • Feb 2020 -
-                  Jul 2021 • 1 yr 6 mos
+                <p className="dark:text-gray-500 flex flex-col sm:flex-row sm:items-center">
+                  <span>Scientific-Production Center MAX</span>
+                  <span className="hidden sm:inline mx-2">•</span>
+                  <span>Contract</span>
+                  <span className="hidden sm:inline mx-2">•</span>
+                  <span>Feb 2020 - Jul 2021 • 1 yr 6 mos</span>
                 </p>
               </div>
               <button
@@ -508,8 +511,12 @@ const AboutPage = () => {
                 <h3 className="text-xl font-semibold text-orange-400">
                   Microsoft Student Partner
                 </h3>
-                <p className="dark:text-gray-500">
-                  Microsoft • Apprenticeship • Apr 2019 - Mar 2020 • 1 yr
+                <p className="dark:text-gray-500 flex flex-col sm:flex-row sm:items-center">
+                  <span>Microsoft</span>
+                  <span className="hidden sm:inline mx-2">•</span>
+                  <span>Apprenticeship</span>
+                  <span className="hidden sm:inline mx-2">•</span>
+                  <span>Apr 2019 - Mar 2020 • 1 yr</span>
                 </p>
               </div>
               <button
