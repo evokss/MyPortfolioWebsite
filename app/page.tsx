@@ -3,9 +3,9 @@
 import React from "react";
 import Navbar from "../components/common/NavBar";
 import HomePage from "../components/home/HomePage";
-import StarryBackground from "@/components/background/StarryBackground";
+import StarryBackground from "../components/background/StarryBackground";
 
-const page = () => {
+const Page: React.FC = () => {
   return (
     <>
       <Navbar />
@@ -16,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
