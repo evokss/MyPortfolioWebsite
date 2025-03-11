@@ -16,7 +16,7 @@ const SocialLinks = () => {
         />
       ),
       name: "Telegram",
-      link: "https://t.me/evokss",
+      link: "https://t.me/evkosse",
     },
     {
       icon: (
