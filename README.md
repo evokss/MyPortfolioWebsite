@@ -1,4 +1,4 @@
-# Welcome to my personal portfolio repository! 🎉
+# Welcome to my personal portfolio repository v.1! 🎉
 
 **Deploy**: [LINK](https://ekoss-ts-portfolio.vercel.app/)
 
